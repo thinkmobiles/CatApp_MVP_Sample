@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		155933715650E474E15CE77E /* Pods_CatApp_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D957F1CEA2AD2AB66CDF01D8 /* Pods_CatApp_MVP.framework */; };
+		E11E914D1E1BFF87006EC121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E913F1E1BFF87006EC121 /* AppDelegate.swift */; };
+		E11E914E1E1BFF87006EC121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11E91401E1BFF87006EC121 /* Assets.xcassets */; };
+		E11E914F1E1BFF87006EC121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11E91411E1BFF87006EC121 /* LaunchScreen.storyboard */; };
+		E11E91501E1BFF87006EC121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11E91431E1BFF87006EC121 /* Main.storyboard */; };
+		E11E91511E1BFF87006EC121 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E11E91451E1BFF87006EC121 /* Info.plist */; };
+		E11E91521E1BFF87006EC121 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E91471E1BFF87006EC121 /* Cat.swift */; };
+		E11E91531E1BFF87006EC121 /* CatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E91481E1BFF87006EC121 /* CatProvider.swift */; };
+		E11E91541E1BFF87006EC121 /* CatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E914A1E1BFF87006EC121 /* CatPresenter.swift */; };
+		E11E91551E1BFF87006EC121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E914C1E1BFF87006EC121 /* ViewController.swift */; };
+		E11E915F1E1C0149006EC121 /* CatProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E91571E1BFFC4006EC121 /* CatProviderTest.swift */; };
+		E11E91601E1C014E006EC121 /* PresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E91591E1BFFC4006EC121 /* PresenterTest.swift */; };
+		E11E91611E1C0153006EC121 /* XCTestHTTPStubExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E915A1E1BFFC4006EC121 /* XCTestHTTPStubExtension.swift */; };
+		E11E91621E1C01CA006EC121 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E11E91581E1BFFC4006EC121 /* Info.plist */; };
+		FC4D29B3B30FB2DFCA79BBE0 /* Pods_CatApp_MVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CFC4B98C59E61603600B36 /* Pods_CatApp_MVPTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1E06EE71E19B288000695CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E06EBC1E199D10000695CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E06EC31E199D11000695CC;
+			remoteInfo = CatApp_ClassicMVC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08CFC4B98C59E61603600B36 /* Pods_CatApp_MVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatApp_MVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		166F2567D79C0005545E0926 /* Pods-CatApp_ClassicMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatApp_ClassicMVC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatApp_ClassicMVC/Pods-CatApp_ClassicMVC.debug.xcconfig"; sourceTree = "<group>"; };
+		313A7F1A60F9ECBC120C0DFE /* Pods_CatApp_ClassicMVCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatApp_ClassicMVCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		425D7F44FC909F02C17D0A73 /* Pods-CatApp_MVPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatApp_MVPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatApp_MVPTests/Pods-CatApp_MVPTests.release.xcconfig"; sourceTree = "<group>"; };
+		583594882E84B01967511BA8 /* Pods-CatApp_ClassicMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatApp_ClassicMVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatApp_ClassicMVC/Pods-CatApp_ClassicMVC.release.xcconfig"; sourceTree = "<group>"; };
+		82FDCF91D1E79701C6AA2CED /* Pods-CatApp_ClassicMVCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatApp_ClassicMVCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatApp_ClassicMVCTests/Pods-CatApp_ClassicMVCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83090159AC570FE8B99EAE30 /* Pods-CatApp_MVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatApp_MVP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatApp_MVP/Pods-CatApp_MVP.debug.xcconfig"; sourceTree = "<group>"; };
+		8649E3E896B8E330CBBB2C38 /* Pods_CatApp_ClassicMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatApp_ClassicMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5545C5FFFC64053EADD1411 /* Pods-CatApp_MVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatApp_MVPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatApp_MVPTests/Pods-CatApp_MVPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C570ADA995F05A2534385E5C /* Pods-CatApp_ClassicMVCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatApp_ClassicMVCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatApp_ClassicMVCTests/Pods-CatApp_ClassicMVCTests.release.xcconfig"; sourceTree = "<group>"; };
+		D02455A848AC8C229DC3010B /* Pods-CatApp_MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatApp_MVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatApp_MVP/Pods-CatApp_MVP.release.xcconfig"; sourceTree = "<group>"; };
+		D957F1CEA2AD2AB66CDF01D8 /* Pods_CatApp_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatApp_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11E913F1E1BFF87006EC121 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E11E91401E1BFF87006EC121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E11E91421E1BFF87006EC121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E11E91441E1BFF87006EC121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E11E91451E1BFF87006EC121 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11E91471E1BFF87006EC121 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		E11E91481E1BFF87006EC121 /* CatProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatProvider.swift; sourceTree = "<group>"; };
+		E11E914A1E1BFF87006EC121 /* CatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatPresenter.swift; sourceTree = "<group>"; };
+		E11E914C1E1BFF87006EC121 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E11E91571E1BFFC4006EC121 /* CatProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatProviderTest.swift; sourceTree = "<group>"; };
+		E11E91581E1BFFC4006EC121 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11E91591E1BFFC4006EC121 /* PresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTest.swift; sourceTree = "<group>"; };
+		E11E915A1E1BFFC4006EC121 /* XCTestHTTPStubExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestHTTPStubExtension.swift; sourceTree = "<group>"; };
+		E1E06EC41E199D11000695CC /* CatApp_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatApp_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E06EE21E19B287000695CC /* CatApp_MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatApp_MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1E06EC11E199D11000695CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				155933715650E474E15CE77E /* Pods_CatApp_MVP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA700D152CE153B9119E970B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4D29B3B30FB2DFCA79BBE0 /* Pods_CatApp_MVPTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62F51AADD8726E0B6F399A82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				313A7F1A60F9ECBC120C0DFE /* Pods_CatApp_ClassicMVCTests.framework */,
+				8649E3E896B8E330CBBB2C38 /* Pods_CatApp_ClassicMVC.framework */,
+				D957F1CEA2AD2AB66CDF01D8 /* Pods_CatApp_MVP.framework */,
+				08CFC4B98C59E61603600B36 /* Pods_CatApp_MVPTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD57C0A48E83EFCA9BB98858 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				166F2567D79C0005545E0926 /* Pods-CatApp_ClassicMVC.debug.xcconfig */,
+				583594882E84B01967511BA8 /* Pods-CatApp_ClassicMVC.release.xcconfig */,
+				82FDCF91D1E79701C6AA2CED /* Pods-CatApp_ClassicMVCTests.debug.xcconfig */,
+				C570ADA995F05A2534385E5C /* Pods-CatApp_ClassicMVCTests.release.xcconfig */,
+				83090159AC570FE8B99EAE30 /* Pods-CatApp_MVP.debug.xcconfig */,
+				D02455A848AC8C229DC3010B /* Pods-CatApp_MVP.release.xcconfig */,
+				C5545C5FFFC64053EADD1411 /* Pods-CatApp_MVPTests.debug.xcconfig */,
+				425D7F44FC909F02C17D0A73 /* Pods-CatApp_MVPTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E11E913E1E1BFF87006EC121 /* CatApp_MVP */ = {
+			isa = PBXGroup;
+			children = (
+				E11E913F1E1BFF87006EC121 /* AppDelegate.swift */,
+				E11E91401E1BFF87006EC121 /* Assets.xcassets */,
+				E11E91411E1BFF87006EC121 /* LaunchScreen.storyboard */,
+				E11E91431E1BFF87006EC121 /* Main.storyboard */,
+				E11E91451E1BFF87006EC121 /* Info.plist */,
+				E11E91461E1BFF87006EC121 /* Model */,
+				E11E91491E1BFF87006EC121 /* Presenter */,
+				E11E914B1E1BFF87006EC121 /* View */,
+			);
+			path = CatApp_MVP;
+			sourceTree = "<group>";
+		};
+		E11E91461E1BFF87006EC121 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E11E91471E1BFF87006EC121 /* Cat.swift */,
+				E11E91481E1BFF87006EC121 /* CatProvider.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E11E91491E1BFF87006EC121 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E11E914A1E1BFF87006EC121 /* CatPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E11E914B1E1BFF87006EC121 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E11E914C1E1BFF87006EC121 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E11E91561E1BFFC4006EC121 /* CatApp_MVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				E11E91571E1BFFC4006EC121 /* CatProviderTest.swift */,
+				E11E91581E1BFFC4006EC121 /* Info.plist */,
+				E11E91591E1BFFC4006EC121 /* PresenterTest.swift */,
+				E11E915A1E1BFFC4006EC121 /* XCTestHTTPStubExtension.swift */,
+			);
+			path = CatApp_MVPTests;
+			sourceTree = "<group>";
+		};
+		E1E06EBB1E199D10000695CC = {
+			isa = PBXGroup;
+			children = (
+				E11E913E1E1BFF87006EC121 /* CatApp_MVP */,
+				E11E91561E1BFFC4006EC121 /* CatApp_MVPTests */,
+				E1E06EC51E199D11000695CC /* Products */,
+				CD57C0A48E83EFCA9BB98858 /* Pods */,
+				62F51AADD8726E0B6F399A82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1E06EC51E199D11000695CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1E06EC41E199D11000695CC /* CatApp_MVP.app */,
+				E1E06EE21E19B287000695CC /* CatApp_MVPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1E06EC31E199D11000695CC /* CatApp_MVP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E06ED61E199D11000695CC /* Build configuration list for PBXNativeTarget "CatApp_MVP" */;
+			buildPhases = (
+				8E2D2885DEBEE7BCF3BDDC0F /* [CP] Check Pods Manifest.lock */,
+				E1E06EC01E199D11000695CC /* Sources */,
+				E1E06EC11E199D11000695CC /* Frameworks */,
+				E1E06EC21E199D11000695CC /* Resources */,
+				465C74F551B9F50A7F6E056E /* [CP] Embed Pods Frameworks */,
+				FB94C3C9E3B727B228FCC30F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatApp_MVP;
+			productName = CatApp_ClassicMVC;
+			productReference = E1E06EC41E199D11000695CC /* CatApp_MVP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1E06EE11E19B287000695CC /* CatApp_MVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E06EE91E19B288000695CC /* Build configuration list for PBXNativeTarget "CatApp_MVPTests" */;
+			buildPhases = (
+				58A8D1ED2B33D635E2ABF195 /* [CP] Check Pods Manifest.lock */,
+				E1E06EDE1E19B287000695CC /* Sources */,
+				E1E06EE01E19B287000695CC /* Resources */,
+				FA700D152CE153B9119E970B /* Frameworks */,
+				47FDBCA32A968B08FE9F4DA6 /* [CP] Embed Pods Frameworks */,
+				EB4CB7352A4603640B55B03B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E06EE81E19B288000695CC /* PBXTargetDependency */,
+			);
+			name = CatApp_MVPTests;
+			productName = CatApp_ClassicMVCTests;
+			productReference = E1E06EE21E19B287000695CC /* CatApp_MVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1E06EBC1E199D10000695CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Robert;
+				TargetAttributes = {
+					E1E06EC31E199D11000695CC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y48M5B57X6;
+						ProvisioningStyle = Automatic;
+					};
+					E1E06EE11E19B287000695CC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y48M5B57X6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1E06EC31E199D11000695CC;
+					};
+				};
+			};
+			buildConfigurationList = E1E06EBF1E199D10000695CC /* Build configuration list for PBXProject "CatApp_MVP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1E06EBB1E199D10000695CC;
+			productRefGroup = E1E06EC51E199D11000695CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1E06EC31E199D11000695CC /* CatApp_MVP */,
+				E1E06EE11E19B287000695CC /* CatApp_MVPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1E06EC21E199D11000695CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11E91511E1BFF87006EC121 /* Info.plist in Resources */,
+				E11E91501E1BFF87006EC121 /* Main.storyboard in Resources */,
+				E11E914E1E1BFF87006EC121 /* Assets.xcassets in Resources */,
+				E11E914F1E1BFF87006EC121 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E06EE01E19B287000695CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11E91621E1C01CA006EC121 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		465C74F551B9F50A7F6E056E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatApp_MVP/Pods-CatApp_MVP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47FDBCA32A968B08FE9F4DA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatApp_MVPTests/Pods-CatApp_MVPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58A8D1ED2B33D635E2ABF195 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E2D2885DEBEE7BCF3BDDC0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB4CB7352A4603640B55B03B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatApp_MVPTests/Pods-CatApp_MVPTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB94C3C9E3B727B228FCC30F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatApp_MVP/Pods-CatApp_MVP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1E06EC01E199D11000695CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11E91551E1BFF87006EC121 /* ViewController.swift in Sources */,
+				E11E91521E1BFF87006EC121 /* Cat.swift in Sources */,
+				E11E91541E1BFF87006EC121 /* CatPresenter.swift in Sources */,
+				E11E91531E1BFF87006EC121 /* CatProvider.swift in Sources */,
+				E11E914D1E1BFF87006EC121 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E06EDE1E19B287000695CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11E91611E1C0153006EC121 /* XCTestHTTPStubExtension.swift in Sources */,
+				E11E91601E1C014E006EC121 /* PresenterTest.swift in Sources */,
+				E11E915F1E1C0149006EC121 /* CatProviderTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1E06EE81E19B288000695CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E06EC31E199D11000695CC /* CatApp_MVP */;
+			targetProxy = E1E06EE71E19B288000695CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E11E91411E1BFF87006EC121 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11E91421E1BFF87006EC121 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E11E91431E1BFF87006EC121 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11E91441E1BFF87006EC121 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1E06ED41E199D11000695CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1E06ED51E199D11000695CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1E06ED71E199D11000695CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83090159AC570FE8B99EAE30 /* Pods-CatApp_MVP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y48M5B57X6;
+				INFOPLIST_FILE = CatApp_MVP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.CatApp-MVP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E1E06ED81E199D11000695CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02455A848AC8C229DC3010B /* Pods-CatApp_MVP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y48M5B57X6;
+				INFOPLIST_FILE = CatApp_MVP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.CatApp-MVP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E1E06EEA1E19B288000695CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5545C5FFFC64053EADD1411 /* Pods-CatApp_MVPTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y48M5B57X6;
+				INFOPLIST_FILE = CatApp_MVPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.CatApp-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatApp_MVP.app/CatApp_MVP";
+			};
+			name = Debug;
+		};
+		E1E06EEB1E19B288000695CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425D7F44FC909F02C17D0A73 /* Pods-CatApp_MVPTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y48M5B57X6;
+				INFOPLIST_FILE = CatApp_MVPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.CatApp-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatApp_MVP.app/CatApp_MVP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1E06EBF1E199D10000695CC /* Build configuration list for PBXProject "CatApp_MVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E06ED41E199D11000695CC /* Debug */,
+				E1E06ED51E199D11000695CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E06ED61E199D11000695CC /* Build configuration list for PBXNativeTarget "CatApp_MVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E06ED71E199D11000695CC /* Debug */,
+				E1E06ED81E199D11000695CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E06EE91E19B288000695CC /* Build configuration list for PBXNativeTarget "CatApp_MVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E06EEA1E19B288000695CC /* Debug */,
+				E1E06EEB1E19B288000695CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1E06EBC1E199D10000695CC /* Project object */;
+}

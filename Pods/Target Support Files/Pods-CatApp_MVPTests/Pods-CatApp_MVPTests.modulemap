@@ -1,0 +1,6 @@
+framework module Pods_CatApp_MVPTests {
+  umbrella header "Pods-CatApp_MVPTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
