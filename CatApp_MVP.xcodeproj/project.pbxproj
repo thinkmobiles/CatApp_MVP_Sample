@@ -9,18 +9,24 @@
 /* Begin PBXBuildFile section */
 		155933715650E474E15CE77E /* Pods_CatApp_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D957F1CEA2AD2AB66CDF01D8 /* Pods_CatApp_MVP.framework */; };
 		E11E914D1E1BFF87006EC121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E913F1E1BFF87006EC121 /* AppDelegate.swift */; };
-		E11E914E1E1BFF87006EC121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11E91401E1BFF87006EC121 /* Assets.xcassets */; };
-		E11E914F1E1BFF87006EC121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11E91411E1BFF87006EC121 /* LaunchScreen.storyboard */; };
-		E11E91501E1BFF87006EC121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11E91431E1BFF87006EC121 /* Main.storyboard */; };
-		E11E91511E1BFF87006EC121 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E11E91451E1BFF87006EC121 /* Info.plist */; };
 		E11E91521E1BFF87006EC121 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E91471E1BFF87006EC121 /* Cat.swift */; };
 		E11E91531E1BFF87006EC121 /* CatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E91481E1BFF87006EC121 /* CatProvider.swift */; };
-		E11E91541E1BFF87006EC121 /* CatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E914A1E1BFF87006EC121 /* CatPresenter.swift */; };
-		E11E91551E1BFF87006EC121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E914C1E1BFF87006EC121 /* ViewController.swift */; };
+		E11E91541E1BFF87006EC121 /* LoadCatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E914A1E1BFF87006EC121 /* LoadCatPresenter.swift */; };
 		E11E915F1E1C0149006EC121 /* CatProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E91571E1BFFC4006EC121 /* CatProviderTest.swift */; };
-		E11E91601E1C014E006EC121 /* PresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E91591E1BFFC4006EC121 /* PresenterTest.swift */; };
+		E11E91601E1C014E006EC121 /* TestLoadCatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E91591E1BFFC4006EC121 /* TestLoadCatPresenter.swift */; };
 		E11E91611E1C0153006EC121 /* XCTestHTTPStubExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E915A1E1BFFC4006EC121 /* XCTestHTTPStubExtension.swift */; };
-		E11E91621E1C01CA006EC121 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E11E91581E1BFFC4006EC121 /* Info.plist */; };
+		E16522E21E20EAB4000D8E1C /* stubbedCatImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E16522E11E20EAB4000D8E1C /* stubbedCatImage.jpg */; };
+		E191FE431E35551C00AF7C48 /* TestEditCatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FE421E35551C00AF7C48 /* TestEditCatPresenter.swift */; };
+		E1F3CF651E33C1A600C428E0 /* LoadCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3CF631E33C1A600C428E0 /* LoadCatViewController.swift */; };
+		E1F3CF671E33C1B900C428E0 /* EditCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3CF661E33C1B900C428E0 /* EditCatViewController.swift */; };
+		E1F3CF691E33C1D500C428E0 /* ImageFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3CF681E33C1D500C428E0 /* ImageFilterCell.swift */; };
+		E1F3CF6F1E33CB2A00C428E0 /* EditCatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3CF6E1E33CB2A00C428E0 /* EditCatPresenter.swift */; };
+		E1F3CF721E33CD7900C428E0 /* FilterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3CF711E33CD7900C428E0 /* FilterOperation.swift */; };
+		E1F3CF741E34C34F00C428E0 /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3CF731E34C34F00C428E0 /* ViewProtocols.swift */; };
+		E1F3CF761E34C3C700C428E0 /* PresenterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3CF751E34C3C700C428E0 /* PresenterProtocols.swift */; };
+		E1F3CF7E1E34C49400C428E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F3CF781E34C49400C428E0 /* Assets.xcassets */; };
+		E1F3CF7F1E34C49400C428E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3CF791E34C49400C428E0 /* LaunchScreen.storyboard */; };
+		E1F3CF801E34C49400C428E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3CF7B1E34C49400C428E0 /* Main.storyboard */; };
 		FC4D29B3B30FB2DFCA79BBE0 /* Pods_CatApp_MVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CFC4B98C59E61603600B36 /* Pods_CatApp_MVPTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,20 +54,28 @@
 		D02455A848AC8C229DC3010B /* Pods-CatApp_MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatApp_MVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatApp_MVP/Pods-CatApp_MVP.release.xcconfig"; sourceTree = "<group>"; };
 		D957F1CEA2AD2AB66CDF01D8 /* Pods_CatApp_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatApp_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11E913F1E1BFF87006EC121 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E11E91401E1BFF87006EC121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E11E91421E1BFF87006EC121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E11E91441E1BFF87006EC121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E11E91451E1BFF87006EC121 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E11E91471E1BFF87006EC121 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		E11E91481E1BFF87006EC121 /* CatProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatProvider.swift; sourceTree = "<group>"; };
-		E11E914A1E1BFF87006EC121 /* CatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatPresenter.swift; sourceTree = "<group>"; };
-		E11E914C1E1BFF87006EC121 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E11E914A1E1BFF87006EC121 /* LoadCatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCatPresenter.swift; sourceTree = "<group>"; };
 		E11E91571E1BFFC4006EC121 /* CatProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatProviderTest.swift; sourceTree = "<group>"; };
 		E11E91581E1BFFC4006EC121 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E11E91591E1BFFC4006EC121 /* PresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTest.swift; sourceTree = "<group>"; };
+		E11E91591E1BFFC4006EC121 /* TestLoadCatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLoadCatPresenter.swift; sourceTree = "<group>"; };
 		E11E915A1E1BFFC4006EC121 /* XCTestHTTPStubExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestHTTPStubExtension.swift; sourceTree = "<group>"; };
+		E16522E11E20EAB4000D8E1C /* stubbedCatImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stubbedCatImage.jpg; sourceTree = "<group>"; };
+		E191FE421E35551C00AF7C48 /* TestEditCatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEditCatPresenter.swift; sourceTree = "<group>"; };
 		E1E06EC41E199D11000695CC /* CatApp_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatApp_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E06EE21E19B287000695CC /* CatApp_MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatApp_MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F3CF631E33C1A600C428E0 /* LoadCatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCatViewController.swift; sourceTree = "<group>"; };
+		E1F3CF661E33C1B900C428E0 /* EditCatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCatViewController.swift; sourceTree = "<group>"; };
+		E1F3CF681E33C1D500C428E0 /* ImageFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilterCell.swift; sourceTree = "<group>"; };
+		E1F3CF6E1E33CB2A00C428E0 /* EditCatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCatPresenter.swift; sourceTree = "<group>"; };
+		E1F3CF711E33CD7900C428E0 /* FilterOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterOperation.swift; sourceTree = "<group>"; };
+		E1F3CF731E34C34F00C428E0 /* ViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		E1F3CF751E34C3C700C428E0 /* PresenterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocols.swift; sourceTree = "<group>"; };
+		E1F3CF781E34C49400C428E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1F3CF7A1E34C49400C428E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1F3CF7C1E34C49400C428E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1F3CF7D1E34C49400C428E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +128,11 @@
 			isa = PBXGroup;
 			children = (
 				E11E913F1E1BFF87006EC121 /* AppDelegate.swift */,
-				E11E91401E1BFF87006EC121 /* Assets.xcassets */,
-				E11E91411E1BFF87006EC121 /* LaunchScreen.storyboard */,
-				E11E91431E1BFF87006EC121 /* Main.storyboard */,
-				E11E91451E1BFF87006EC121 /* Info.plist */,
+				E1F3CF771E34C49400C428E0 /* Resources */,
+				E1F3CF701E33CD5E00C428E0 /* Utils */,
 				E11E91461E1BFF87006EC121 /* Model */,
-				E11E91491E1BFF87006EC121 /* Presenter */,
 				E11E914B1E1BFF87006EC121 /* View */,
+				E11E91491E1BFF87006EC121 /* Presenter */,
 			);
 			path = CatApp_MVP;
 			sourceTree = "<group>";
@@ -137,7 +149,9 @@
 		E11E91491E1BFF87006EC121 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				E11E914A1E1BFF87006EC121 /* CatPresenter.swift */,
+				E1F3CF751E34C3C700C428E0 /* PresenterProtocols.swift */,
+				E11E914A1E1BFF87006EC121 /* LoadCatPresenter.swift */,
+				E1F3CF6E1E33CB2A00C428E0 /* EditCatPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -145,7 +159,9 @@
 		E11E914B1E1BFF87006EC121 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E11E914C1E1BFF87006EC121 /* ViewController.swift */,
+				E1F3CF731E34C34F00C428E0 /* ViewProtocols.swift */,
+				E1F3CF621E33C1A600C428E0 /* LoadCat */,
+				E1F3CF641E33C1A600C428E0 /* EditCat */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,12 +169,30 @@
 		E11E91561E1BFFC4006EC121 /* CatApp_MVPTests */ = {
 			isa = PBXGroup;
 			children = (
+				E16522DD1E20EA87000D8E1C /* Resources */,
 				E11E91571E1BFFC4006EC121 /* CatProviderTest.swift */,
+				E11E91591E1BFFC4006EC121 /* TestLoadCatPresenter.swift */,
+				E191FE421E35551C00AF7C48 /* TestEditCatPresenter.swift */,
 				E11E91581E1BFFC4006EC121 /* Info.plist */,
-				E11E91591E1BFFC4006EC121 /* PresenterTest.swift */,
 				E11E915A1E1BFFC4006EC121 /* XCTestHTTPStubExtension.swift */,
 			);
 			path = CatApp_MVPTests;
+			sourceTree = "<group>";
+		};
+		E16522DD1E20EA87000D8E1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E16522DE1E20EA87000D8E1C /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E16522DE1E20EA87000D8E1C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E16522E11E20EAB4000D8E1C /* stubbedCatImage.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		E1E06EBB1E199D10000695CC = {
@@ -179,6 +213,43 @@
 				E1E06EE21E19B287000695CC /* CatApp_MVPTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E1F3CF621E33C1A600C428E0 /* LoadCat */ = {
+			isa = PBXGroup;
+			children = (
+				E1F3CF631E33C1A600C428E0 /* LoadCatViewController.swift */,
+			);
+			name = LoadCat;
+			path = DownloadCat;
+			sourceTree = "<group>";
+		};
+		E1F3CF641E33C1A600C428E0 /* EditCat */ = {
+			isa = PBXGroup;
+			children = (
+				E1F3CF661E33C1B900C428E0 /* EditCatViewController.swift */,
+				E1F3CF681E33C1D500C428E0 /* ImageFilterCell.swift */,
+			);
+			path = EditCat;
+			sourceTree = "<group>";
+		};
+		E1F3CF701E33CD5E00C428E0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E1F3CF711E33CD7900C428E0 /* FilterOperation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E1F3CF771E34C49400C428E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1F3CF781E34C49400C428E0 /* Assets.xcassets */,
+				E1F3CF791E34C49400C428E0 /* LaunchScreen.storyboard */,
+				E1F3CF7B1E34C49400C428E0 /* Main.storyboard */,
+				E1F3CF7D1E34C49400C428E0 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +304,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = Robert;
+				ORGANIZATIONNAME = Thinkmobiles;
 				TargetAttributes = {
 					E1E06EC31E199D11000695CC = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -272,10 +343,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E11E91511E1BFF87006EC121 /* Info.plist in Resources */,
-				E11E91501E1BFF87006EC121 /* Main.storyboard in Resources */,
-				E11E914E1E1BFF87006EC121 /* Assets.xcassets in Resources */,
-				E11E914F1E1BFF87006EC121 /* LaunchScreen.storyboard in Resources */,
+				E1F3CF801E34C49400C428E0 /* Main.storyboard in Resources */,
+				E1F3CF7E1E34C49400C428E0 /* Assets.xcassets in Resources */,
+				E1F3CF7F1E34C49400C428E0 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E11E91621E1C01CA006EC121 /* Info.plist in Resources */,
+				E16522E21E20EAB4000D8E1C /* stubbedCatImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,11 +457,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E11E91551E1BFF87006EC121 /* ViewController.swift in Sources */,
+				E1F3CF651E33C1A600C428E0 /* LoadCatViewController.swift in Sources */,
 				E11E91521E1BFF87006EC121 /* Cat.swift in Sources */,
-				E11E91541E1BFF87006EC121 /* CatPresenter.swift in Sources */,
+				E1F3CF741E34C34F00C428E0 /* ViewProtocols.swift in Sources */,
+				E1F3CF761E34C3C700C428E0 /* PresenterProtocols.swift in Sources */,
+				E1F3CF691E33C1D500C428E0 /* ImageFilterCell.swift in Sources */,
+				E11E91541E1BFF87006EC121 /* LoadCatPresenter.swift in Sources */,
+				E1F3CF671E33C1B900C428E0 /* EditCatViewController.swift in Sources */,
+				E1F3CF721E33CD7900C428E0 /* FilterOperation.swift in Sources */,
 				E11E91531E1BFF87006EC121 /* CatProvider.swift in Sources */,
 				E11E914D1E1BFF87006EC121 /* AppDelegate.swift in Sources */,
+				E1F3CF6F1E33CB2A00C428E0 /* EditCatPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,8 +476,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E11E91611E1C0153006EC121 /* XCTestHTTPStubExtension.swift in Sources */,
-				E11E91601E1C014E006EC121 /* PresenterTest.swift in Sources */,
+				E11E91601E1C014E006EC121 /* TestLoadCatPresenter.swift in Sources */,
 				E11E915F1E1C0149006EC121 /* CatProviderTest.swift in Sources */,
+				E191FE431E35551C00AF7C48 /* TestEditCatPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,18 +493,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E11E91411E1BFF87006EC121 /* LaunchScreen.storyboard */ = {
+		E1F3CF791E34C49400C428E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E11E91421E1BFF87006EC121 /* Base */,
+				E1F3CF7A1E34C49400C428E0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		E11E91431E1BFF87006EC121 /* Main.storyboard */ = {
+		E1F3CF7B1E34C49400C428E0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E11E91441E1BFF87006EC121 /* Base */,
+				E1F3CF7C1E34C49400C428E0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -532,13 +609,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83090159AC570FE8B99EAE30 /* Pods-CatApp_MVP.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y48M5B57X6;
-				INFOPLIST_FILE = CatApp_MVP/Info.plist;
+				INFOPLIST_FILE = CatApp_MVP/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.CatApp-MVP";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmobiles.Cat-MVP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -546,13 +625,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D02455A848AC8C229DC3010B /* Pods-CatApp_MVP.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y48M5B57X6;
-				INFOPLIST_FILE = CatApp_MVP/Info.plist;
+				INFOPLIST_FILE = CatApp_MVP/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.CatApp-MVP";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmobiles.Cat-MVP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -560,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5545C5FFFC64053EADD1411 /* Pods-CatApp_MVPTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = Y48M5B57X6;
 				INFOPLIST_FILE = CatApp_MVPTests/Info.plist;
@@ -575,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 425D7F44FC909F02C17D0A73 /* Pods-CatApp_MVPTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = Y48M5B57X6;
 				INFOPLIST_FILE = CatApp_MVPTests/Info.plist;

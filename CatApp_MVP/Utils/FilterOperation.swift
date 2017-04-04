@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  FilterOperation.swift
 //
 //  Created by R. Fogash, V. Ahosta
 //  Copyright (c) 2017 Thinkmobiles
@@ -23,26 +23,47 @@
 //  SOFTWARE.
 //
 
+import Foundation
 import UIKit
-import OHHTTPStubs
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-    let catProvider =  CatProvider()
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        let view = window?.rootViewController as! LoadCatViewProtocol
-        let presenter = LoadCatPresenter()
-        presenter.catProvider = catProvider
-        presenter.installView(view)
-        view.setPresenter(presenter)
-        
-        return true
-    }
+final class FilterOperation: Operation {
     
+    let filter: CIFilter
+    let inputImage: UIImage
+    
+    private(set) var outputImage: UIImage?
+    private(set) var error: Error?
+
+    init(filter: CIFilter, image: UIImage) {
+        self.filter = filter
+        self.inputImage = image
+    }
+
+    override func main() {
+        if isCancelled { return }
+        let inputCIImage = CIImage(cgImage: self.inputImage.cgImage!)
+        if isCancelled { return }
+        filter.setValue(inputCIImage, forKey: kCIInputImageKey)
+        guard let outputCIImage = filter.outputImage else {
+            error = .failedToApplyFilter
+            return
+        }
+        if isCancelled { return }
+        guard let cgImage = CIContext(options: nil).createCGImage(outputCIImage, from: outputCIImage.extent) else {
+            error = .failedToRenderImage
+            return
+        }
+        outputImage = UIImage(cgImage: cgImage)
+    }
     
 }
 
+extension FilterOperation {
+
+    enum Error {
+        case invalidInputData
+        case failedToApplyFilter
+        case failedToRenderImage
+    }
+
+}

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  ImageFilterTableViewCell.swift
 //
 //  Created by R. Fogash, V. Ahosta
 //  Copyright (c) 2017 Thinkmobiles
@@ -24,25 +24,20 @@
 //
 
 import UIKit
-import OHHTTPStubs
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class ImageFilterCell: UICollectionViewCell {
 
-    var window: UIWindow?
-    let catProvider =  CatProvider()
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        let view = window?.rootViewController as! LoadCatViewProtocol
-        let presenter = LoadCatPresenter()
-        presenter.catProvider = catProvider
-        presenter.installView(view)
-        view.setPresenter(presenter)
-        
-        return true
+    @IBOutlet var imageView: UIImageView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.image = nil
     }
     
-    
-}
+    var image: UIImage? {
+        didSet {
+            imageView.image = image
+        }
+    }
 
+}

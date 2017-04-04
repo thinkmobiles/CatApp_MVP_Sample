@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  PresenterProtocols.swift
 //
 //  Created by R. Fogash, V. Ahosta
 //  Copyright (c) 2017 Thinkmobiles
@@ -24,25 +24,33 @@
 //
 
 import UIKit
-import OHHTTPStubs
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+// General protocol
 
-    var window: UIWindow?
-    let catProvider =  CatProvider()
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        let view = window?.rootViewController as! LoadCatViewProtocol
-        let presenter = LoadCatPresenter()
-        presenter.catProvider = catProvider
-        presenter.installView(view)
-        view.setPresenter(presenter)
-        
-        return true
-    }
-    
-    
+protocol Presenter {
+    func installView(_ view: View)
 }
 
+// Concrete scene protocols
+
+protocol LoadCatPresenterProtocol: Presenter {
+    
+    func load()
+    func cancel()
+    func updateUI()
+    func edit()
+    
+    var catProvider: CatProvider! { get set }
+}
+
+protocol EditCatPresenterProtocol: Presenter {
+    
+    var image: UIImage! { get set }
+    weak var delegate: EditCatPresenterDelegate! { get set }
+    
+    func updateView()
+    func selectedImageAtIndex(_ index: Int)
+    func saveImage()
+    func finishEditing()
+    
+}

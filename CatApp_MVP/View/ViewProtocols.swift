@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  Protocols.swift
 //
 //  Created by R. Fogash, V. Ahosta
 //  Copyright (c) 2017 Thinkmobiles
@@ -24,25 +24,32 @@
 //
 
 import UIKit
-import OHHTTPStubs
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+// General View protocol
 
-    var window: UIWindow?
-    let catProvider =  CatProvider()
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        let view = window?.rootViewController as! LoadCatViewProtocol
-        let presenter = LoadCatPresenter()
-        presenter.catProvider = catProvider
-        presenter.installView(view)
-        view.setPresenter(presenter)
-        
-        return true
-    }
+protocol View: class {
     
-    
+    func setPresenter(_ presenter: Presenter)
+    func getPresenter() -> Presenter
 }
 
+// Concrete protocols for scenes
+
+protocol LoadCatViewProtocol: View {
+    
+    func updateLoadingState(_ loadingState: Bool)
+    func updateTitle(_ imageTitle: String?)
+    func updateImage(_ image: Data?)
+    func showEditScene(withPresenter presenter: Presenter)
+    func finishedEdit()
+}
+
+protocol EditCatViewProtocol: View {
+    
+    var imageList: [UIImage]! { get set }
+    
+    func imageListUpdateImage(_ image: UIImage, at index: Int)
+    func updateProcessingState(_ isProcessing: Bool)
+    func updateImage(_ image: UIImage)
+    func showMessage(_ message: String)
+}
